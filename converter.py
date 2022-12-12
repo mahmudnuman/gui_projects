@@ -6,7 +6,7 @@ window.title("KG TO GRAM POUND OUNCE CONVERTER")
 
 
 def from_kg():
-    gram=str((float(kg_input_text.get())*1000)) + ' g'
+    gram=str(float(kg_input_text.get())*1000) + ' g'
     gram_output.config(state="normal")
     gram_output.delete("1.0", END)
     gram_output.insert(END,gram) 
