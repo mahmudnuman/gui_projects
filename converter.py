@@ -5,18 +5,22 @@ window=Tk()
 
 
 def from_kg():
-    gram=float(kg_input_text.get())*1000
+    gram=str((float(kg_input_text.get())*1000)) + ' g'
     gram_output.delete("1.0", END)
     gram_output.insert(END,gram) 
+    gram_output.configure(state='disabled')
     
-    pound=float(kg_input_text.get())*2.20462
+    pound=str(float(kg_input_text.get())*2.20462) + ' lb'
     pound_output.delete("1.0", END)
     pound_output.insert(END,pound) 
+    pound_output.configure(state='disabled')
     
-    ounce=float(kg_input_text.get())*35.274
+    ounce=str(float(kg_input_text.get())*35.274) + ' oz'
     ounce_output.delete("1.0", END)
     ounce_output.insert(END,ounce) 
-
+    ounce_output.configure(state='disabled')
+    
+    
 kg_label=Label(window,text="KG",width=15)
 kg_label.grid(row=0,column=0)
 
