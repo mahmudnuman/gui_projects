@@ -30,8 +30,6 @@ convert_button=Button(window,text="Convert",command=from_kg,width=20)
 convert_button.grid(row=0,column=2)
 
 
-
-
 gram_output=Text(window,height=1,width=20)
 gram_output.grid(row=1,column=0)
 
