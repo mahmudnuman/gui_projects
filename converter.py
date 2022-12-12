@@ -2,6 +2,7 @@ from tkinter import *
 import math
 
 window=Tk() 
+window.title("KG TO GRAM POUND OUNCE CONVERTER")
 
 
 def from_kg():
