@@ -6,16 +6,19 @@ window=Tk()
 
 def from_kg():
     gram=str((float(kg_input_text.get())*1000)) + ' g'
+    gram_output.config(state="normal")
     gram_output.delete("1.0", END)
     gram_output.insert(END,gram) 
     gram_output.configure(state='disabled')
     
     pound=str(float(kg_input_text.get())*2.20462) + ' lb'
+    pound_output.config(state="normal")
     pound_output.delete("1.0", END)
     pound_output.insert(END,pound) 
     pound_output.configure(state='disabled')
     
     ounce=str(float(kg_input_text.get())*35.274) + ' oz'
+    ounce_output.config(state="normal")
     ounce_output.delete("1.0", END)
     ounce_output.insert(END,ounce) 
     ounce_output.configure(state='disabled')
